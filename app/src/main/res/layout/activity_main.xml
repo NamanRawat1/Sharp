@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e50000"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.example.intents.time.MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Event Name:"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:id="@+id/textView" />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:id="@+id/edittext"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:id="@+id/linearLayout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Sunday"
+            android:id="@+id/cbsun"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Monday"
+            android:id="@+id/cbmon"
+            android:checked="false" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Tuesday"
+            android:id="@+id/cbtue"
+            android:checked="false" /><CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Wednesday"
+        android:id="@+id/cbwed"
+        android:checked="false" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Thrusday"
+            android:id="@+id/cbthu"
+            android:checked="false" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Friday"
+            android:id="@+id/cbfri"
+            android:checked="false" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturday"
+            android:id="@+id/cbsat"
+            android:checked="false" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:id="@+id/butstart"
+        android:layout_marginTop="51dp"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:onClick="start_time" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="END TIME"
+        android:id="@+id/butend"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/butstart"
+        android:layout_alignStart="@+id/butstart"
+        android:onClick="end_time" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CREATE"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="createevent"/>
+
+
+
+
+</RelativeLayout>
